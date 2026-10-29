@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="330" viewBox="0 0 960 330" role="img" aria-labelledby="terminal-title terminal-description">
+<title id="terminal-title">I’m Zeyad Al-Ajami.</title>
+<desc id="terminal-description">A friendly green terminal window. zeyad@cairo: ~. $ hello --world. I’m Zeyad Al-Ajami. interface → API → database. $ make something useful.</desc>
+<defs>
+<clipPath id="intro-clip" clipPathUnits="userSpaceOnUse"><rect x="0" y="-31.2" width="202.8" height="44.2" /></clipPath>
+<clipPath id="outro-clip" clipPathUnits="userSpaceOnUse"><rect x="0" y="-31.2" width="327.6" height="44.2" /></clipPath>
+</defs>
+<style>
+@media (prefers-color-scheme: dark) {
+  .theme-fill-background { fill: #121d1a; }
+  .theme-stroke-border { stroke: #31473d; }
+  .theme-stroke-divider { stroke: #2b3c33; }
+  .theme-fill-dot { fill: #709180; }
+  .theme-fill-title { fill: #a3b4a7; }
+  .theme-fill-command { fill: #89c7a4; }
+  .theme-fill-text { fill: #bedfca; }
+  .theme-fill-cursor { fill: #8bd4a7; }
+}
+</style><rect x="0.75" y="0.75" width="958.5" height="328.5" rx="9" fill="#f2f5f3" stroke="#c9d9d0" stroke-width="1.5" class="theme-fill-background theme-stroke-border" />
+<path d="M1 58H959" fill="none" stroke="#d5e0d9" class="theme-stroke-divider" />
+<g aria-hidden="true" fill="#94aa9c" class="theme-fill-dot">
+<circle cx="29" cy="29" r="5" />
+<circle cx="48" cy="29" r="5" />
+<circle cx="67" cy="29" r="5" />
+</g>
+<g font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace">
+<text x="99" y="37" fill="#617169" font-size="24" class="theme-fill-title">zeyad@cairo: ~</text>
+<g transform="translate(42 112)" fill="#548268" font-size="26" class="theme-fill-command">
+<text x="0" y="0" textLength="15.6" lengthAdjust="spacingAndGlyphs">$</text>
+<g transform="translate(31.2 0)">
+<g clip-path="url(#intro-clip)">
+<text x="0" y="0" textLength="202.8" lengthAdjust="spacingAndGlyphs">hello --world</text>
+</g></g></g>
+<text x="42" y="177" fill="#264d3c" font-size="44" font-weight="600" letter-spacing="-0.7" class="theme-fill-text">I’m Zeyad Al-Ajami.</text>
+<text x="42" y="227" fill="#264d3c" font-size="26" class="theme-fill-text">interface → API → database</text>
+<g transform="translate(42 282)" fill="#548268" font-size="26" class="theme-fill-command">
+<text x="0" y="0" textLength="15.6" lengthAdjust="spacingAndGlyphs">$</text>
+<g transform="translate(31.2 0)">
+<g clip-path="url(#outro-clip)">
+<text x="0" y="0" textLength="327.6" lengthAdjust="spacingAndGlyphs">make something useful</text>
+</g></g></g>
+</g>
+<rect aria-hidden="true" x="405.8" y="259" width="13" height="26" rx="1" fill="#4a8868" class="theme-fill-cursor" />
+</svg>
