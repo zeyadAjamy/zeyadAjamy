@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="330" viewBox="0 0 480 330" role="img" aria-labelledby="terminal-title terminal-description">
+<title id="terminal-title">I’m Zeyad Al-Ajami.</title>
+<desc id="terminal-description">A friendly green terminal window. zeyad@cairo: ~. $ hello --world. I’m Zeyad Al-Ajami. interface → API → database. $ make something useful. The two commands type once and the cursor briefly blinks, then the image settles. The name stays visible. Reduced-motion preferences show the complete still state.</desc>
+<style>
+.type-window { transform-origin: 0 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .type-intro { animation: type-in 1.05s steps(13, end) 0.1s 1 both; }
+  .type-outro { animation: type-in 1.2s steps(21, end) 1.7s 1 both; }
+  .cursor { animation: caret-settle 4.3s steps(1, end) 1 both; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .type-window { animation: none; transform: scaleX(1); }
+  .cursor { animation: none; opacity: 1; }
+}
+@keyframes type-in {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@keyframes caret-settle {
+  0%, 68% { opacity: 0; }
+  69%, 76% { opacity: 1; }
+  77%, 84% { opacity: 0; }
+  85%, 92% { opacity: 1; }
+  93%, 99% { opacity: 0; }
+  100% { opacity: 1; }
+}
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  .theme-fill-background { fill: #121d1a; }
+  .theme-stroke-border { stroke: #31473d; }
+  .theme-stroke-divider { stroke: #2b3c33; }
+  .theme-fill-dot { fill: #709180; }
+  .theme-fill-title { fill: #a3b4a7; }
+  .theme-fill-command { fill: #89c7a4; }
+  .theme-fill-text { fill: #bedfca; }
+  .theme-fill-cursor { fill: #8bd4a7; }
+}
+</style><defs>
+<clipPath id="intro-clip" clipPathUnits="userSpaceOnUse"><rect class="type-window type-intro" x="0" y="-28.8" width="187.2" height="40.8" /></clipPath>
+<clipPath id="outro-clip" clipPathUnits="userSpaceOnUse"><rect class="type-window type-outro" x="0" y="-28.8" width="302.4" height="40.8" /></clipPath>
+</defs>
+<rect x="0.75" y="0.75" width="478.5" height="328.5" rx="9" fill="#f2f5f3" stroke="#c9d9d0" stroke-width="1.5" class="theme-fill-background theme-stroke-border" />
+<path d="M1 54H479" fill="none" stroke="#d5e0d9" class="theme-stroke-divider" />
+<g aria-hidden="true" fill="#94aa9c" class="theme-fill-dot">
+<circle cx="24" cy="27" r="4.5" />
+<circle cx="40" cy="27" r="4.5" />
+<circle cx="56" cy="27" r="4.5" />
+</g>
+<g font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace">
+<text x="88" y="35" fill="#617169" font-size="20" class="theme-fill-title">zeyad@cairo: ~</text>
+<g transform="translate(28 103)" fill="#548268" font-size="24" class="theme-fill-command">
+<text x="0" y="0" textLength="14.4" lengthAdjust="spacingAndGlyphs">$</text>
+<g transform="translate(28.8 0)">
+<g clip-path="url(#intro-clip)">
+<text x="0" y="0" textLength="187.2" lengthAdjust="spacingAndGlyphs">hello --world</text>
+</g></g></g>
+<text x="28" y="164" fill="#264d3c" font-size="32" font-weight="600" letter-spacing="-0.4" class="theme-fill-text">I’m Zeyad Al-Ajami.</text>
+<text x="28" y="214" fill="#264d3c" font-size="20" class="theme-fill-text">interface → API → database</text>
+<g transform="translate(28 273)" fill="#548268" font-size="24" class="theme-fill-command">
+<text x="0" y="0" textLength="14.4" lengthAdjust="spacingAndGlyphs">$</text>
+<g transform="translate(28.8 0)">
+<g clip-path="url(#outro-clip)">
+<text x="0" y="0" textLength="302.4" lengthAdjust="spacingAndGlyphs">make something useful</text>
+</g></g></g>
+</g>
+<rect class="cursor theme-fill-cursor" aria-hidden="true" x="364.2" y="252" width="12" height="24" rx="1" fill="#4a8868" />
+</svg>
