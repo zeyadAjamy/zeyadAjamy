@@ -1,12 +1,15 @@
+<!-- Keep theme selection separate from width and motion queries: GitHub rewrites color-scheme media rules. -->
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/header-mobile-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/header-mobile-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/header-dark-still.svg">
+  <source media="(max-width: 600px)" srcset="./assets/header-mobile-dark.svg">
+  <img src="./assets/header-dark.svg#gh-dark-mode-only" width="960" alt="Hi, I'm Zeyad Al-Ajami. I build web products across interfaces, APIs and databases. A friendly terminal types hello --world and make something useful.">
+</picture>
+<picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/header-mobile-light-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/header-dark-still.svg">
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/header-light-still.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/header-mobile-dark.svg">
   <source media="(max-width: 600px)" srcset="./assets/header-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg">
-  <img src="./assets/header-light.svg" width="960" alt="Hi, I'm Zeyad Al-Ajami. I build web products across interfaces, APIs and databases. A friendly terminal types hello --world and make something useful.">
+  <img src="./assets/header-light.svg#gh-light-mode-only" width="960" alt="Hi, I'm Zeyad Al-Ajami. I build web products across interfaces, APIs and databases. A friendly terminal types hello --world and make something useful.">
 </picture>
 
 ### `$ whoami`
